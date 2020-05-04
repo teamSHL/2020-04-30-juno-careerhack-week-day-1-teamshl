@@ -34,6 +34,7 @@ class CommentView extends Component {
             "http://ec2-3-15-40-216.us-east-2.compute.amazonaws.com:5000/comments/"
           )
           .then((response) => {
+            console.log('comment', response);
             this.setState({ comments: response.data });
           })
           .catch((error) => {
