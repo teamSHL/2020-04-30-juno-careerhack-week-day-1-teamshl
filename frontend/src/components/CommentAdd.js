@@ -14,7 +14,7 @@ class CommentAdd extends Component {
   }
 
   componentDidMount(){
-    axios.get('http://localhost:5000/users/')
+    axios.get('http://ec2-3-15-40-216.us-east-2.compute.amazonaws.com/users')
     .then(response =>{
       if (response.data.length > 0){
         this.setState({
